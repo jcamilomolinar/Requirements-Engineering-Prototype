@@ -4,59 +4,71 @@
     margin: auto;
 }
 
-.element {
+/* Dynamic relationships */
+.elementdr {
     position: absolute;
     cursor: pointer;
     background-color: aquamarine;
     border-radius: 50px;
+    opacity: 70%;
+    width: 101px;
+    height: 41px;
 }
 
 #stealsBall {
     left: 1732px;
     top: 838px;
-    width: 101px;
-    height: 41px;
 }
 
 #passesBall {
     left: 1878px;
     top: 838px;
-    width: 101px;
-    height: 41px;
 }
 
 #modifiesScoreboard {
     left: 618px;
     top: 413px;
-    width: 101px;
-    height: 41px;
 }
 
 #modifiesPlayerStatistic {
     left: 2796px;
     top: 698px;
-    width: 101px;
-    height: 41px;
 }
 
 #modifiesTeamStatistic {
     left: 2878px;
     top: 863px;
-    width: 101px;
-    height: 41px;
 }
 
-#purchasesTicket {}
+#purchasesTicket {
+    left: 1616px;
+    top: 338px;
+}
 
-#admonishesPlayer {} 
+#admonishesPlayer {
+    left: 1732px;
+    top: 838px;
+} 
 
-#commitsFoul {}
+#commitsFoul {
+    left: 2043px;
+    top: 848px;
+}
 
-#defendsBasket {}
+#defendsBasket {
+    left: 1748px;
+    top: 538px;
+}
 
-#selectsTeam {}
+#selectsTeam {
+    left: 1405px;
+    top: 1168px;
+}
 
-#controllingModifies {}
+/* Goals and requirements */
+#controllingModifies {
+
+}
 
 #increasingScore {}
 
