@@ -4,11 +4,17 @@
     margin: auto;
 }
 
-#stealsBall {
+.element {
     position: absolute;
-    left: 1740px;
-    top: 845px;
+    cursor: pointer;
     background-color: aquamarine;
-    width: 80px;
-    height: 30px;
+    border-radius: 50px;
 }
+
+#stealsBall {
+    left: 1732px;
+    top: 838px;
+    width: 101px;
+    height: 41px;
+}
+
