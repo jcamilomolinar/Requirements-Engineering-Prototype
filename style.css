@@ -126,23 +126,82 @@
 
 /* Conditionals and Events */
 
-#PlayerScoresBasket {}
+.elemente {
+    position: absolute;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 100%;
+    opacity: 70%;
+    width: 177px;
+    height: 177px;
+}
 
-#TicketSold {}
+#PlayerScoresBasket {
+    left: 240px;
+    top: 110px;
+}
 
-#SpectatorEntersSystem {}
+#TicketSold {
+    left: 279px;
+    top: 935px;
+    width: 133px;
+    height: 133px;
+}
 
-#TeamStatisticVisualize {}
+#SpectatorEntersSystem {
+    left: 110px;
+    top: 1347px;
+}
 
-#CoachDirectsPlayer {}
+#TeamStatisticVisualized {
+    left: 458px;
+    top: 1468px;
+    width: 133px;
+    height: 133px;
+}
 
-#PlayerStatisticIncrease {}
+#CoachDirectsPlayer {
+    left: 1666px;
+    top: 1480px;
+}
 
-#PlayerScoresBasket {}
+#PlayerStatisticIncreased {
+    left: 2697px;
+    top: 1287px;
+    width: 133px;
+    height: 133px;
+}
 
-#TicketAvailable {}
+#TeamStatisticUpdated {
+    left: 3008px;
+    top: 935px;
+    width: 133px;
+    height: 133px;
+}
 
-#FoulTypePersonalOrTechnical {}
+.elementc {
+    position: absolute;
+    cursor: pointer;
+    background-color: red;
+    opacity: 70%;
+    transform: rotate(45deg);
+}
+
+#TicketAvailable {
+    width: 270px;
+    height: 270px;
+    left: 2236px;
+    top: 65px;
+}
+
+#FoulTypePersonalOrTechnical {
+    width: 140px;
+    height: 140px;
+    left: 99px;
+    top: 823px;
+}
+
+/* Class Concepts */
 
 #Scorer {}
 
