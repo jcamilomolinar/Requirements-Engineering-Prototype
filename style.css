@@ -5,10 +5,10 @@
 }
 
 /* Dynamic relationships */
-.elementdr {
+.elementgdr {
     position: absolute;
     cursor: pointer;
-    background-color: aquamarine;
+    background-color: red;
     border-radius: 50px;
     opacity: 70%;
     width: 101px;
@@ -41,13 +41,13 @@
 }
 
 #purchasesTicket {
-    left: 1616px;
-    top: 338px;
+    left: 628px;
+    top: 793px;
 }
 
 #admonishesPlayer {
-    left: 1732px;
-    top: 838px;
+    left: 1616px;
+    top: 338px;
 } 
 
 #commitsFoul {
@@ -66,33 +66,69 @@
 }
 
 /* Goals and requirements */
-#controllingModifies {
 
+#controllingModifies {
+    left: 468px;
+    top: 413px;
 }
 
-#increasingScore {}
+#increasingScore {
+    left: 358px;
+    top: 538px;
+}
 
-#guaranteeingRule {}
+#guaranteeingRule {
+    left: 199px;
+    top: 644px;
+    width: 118px;
+}
 
-#enhancingHighlight {}
+#enhancingHighlight {
+    left: 358px;
+    top: 738px;
+}
 
-#increasingPurchases {}
+#increasingPurchases {
+    left: 478px;
+    top: 998px;
+}
 
-#makingRevenue {}
+#makingRevenue {
+    left: 358px;
+    top: 1158px;
+}
 
-#promotingEvent {}
+#promotingEvent {
+    left: 1480px;
+    top: 1735px;
+}
 
-#procuringAdmonishes {}
+#procuringAdmonishes {
+    left: 1778px;
+    top: 338px;
+}
 
-#avoidingCommits {}
+#avoidingCommits {
+    left: 2198px;
+    top: 784px;
+    height: 38px;
+}
 
-#improvingPlayerStatistic {}
+#improvingPlayerStatistic {
+    left: 2508px;
+    top: 626px;
+}
 
-#reducingFoul {}
+#reducingFoul {
+    left: 2597px;
+    top: 1645px;
+}
+
+/* Conditionals and Events */
 
 #PlayerScoresBasket {}
 
-#TicketSol {}
+#TicketSold {}
 
 #SpectatorEntersSystem {}
 
