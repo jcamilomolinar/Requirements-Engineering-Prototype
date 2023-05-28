@@ -1,4 +1,14 @@
 .EP {
+    position: relative;
     display: block;
     margin: auto;
+}
+
+#stealsBall {
+    position: absolute;
+    left: 1740px;
+    top: 845px;
+    background-color: aquamarine;
+    width: 80px;
+    height: 30px;
 }
