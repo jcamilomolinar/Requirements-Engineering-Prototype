@@ -202,59 +202,164 @@
 }
 
 /* Class Concepts */
+.element {
+    position: absolute;
+    cursor: pointer;
+    background-color: red;
+    opacity: 70%;
+    width: 100px;
+    height: 40px;
+}
 
-#Scorer {}
+#Scorer {
+    left: 957px;
+    top: 263px;
+}
 
-#Scoreboar {}
+#Scoreboard {
+    left: 820px;
+    top: 538px;
+}
 
-#Arena {}
+#Arena {
+    left: 818px;
+    top: 613px;
+}
 
-#Spectator {}
+#Spectator {
+    left: 788px;
+    top: 793px;
+}
 
-#Ticket {}
+#Ticket {
+    left: 834px;
+    top: 944px;
+}
 
-#Administrator {}
+#Administration {
+    left: 668px;
+    top: 1259px;
+    width: 110px;
+}
 
-#Commissioner {}
+#Commissioner {
+    left: 834px;
+    top: 1378px;
+    width: 107px;
+}
 
-#Official {}
+#Official {
+    left: 1169px;
+    top: 483px;
+    width: 149px;
+}
 
-#Game {}
+#Game {
+    left: 1188px;
+    top: 658px;
+    width: 108px;
+}
 
-#Season {}
+#Season {
+    left: 1188px;
+    top: 793px;
+    width: 109px;
+}
 
-#National-Basketball-Association {}
+#National-Basketball-Association {
+    left: 1164px;
+    top: 948px;
+    width: 160px;
+}
 
-#Conference {}
+#Conference {
+    left: 1178px;
+    top: 1088px;
+    width: 118px;
+}
 
-#East {}
+#East {
+    left: 1076px;
+    top: 1249px;
+}
 
-#West {}
+#West {
+    left: 1310px;
+    top: 1249px;
+}
 
-#Event {} 
+#Event {
+    left: 1188px;
+    top: 1679px;
+    width: 110px;
+} 
 
-#All-Star-Weekend {}
+#All-Star-Weekend {
+    left: 1183px;
+    top: 1815px;
+    width: 110px;
+}
 
-#Referee {}
+#Referee {
+    left: 1381px;
+    top: 263px;
+}
 
-#Equipment {}
+#Equipment {
+    left: 1438px;
+    top: 648px;
+}
 
-#Team {}
+#Team {
+    left: 1558px;
+    top: 1088px;
+}
 
-#Trainer {}
+#Trainer {
+    left: 1488px;
+    top: 1258px;
+}
 
-#Player {}
+#Player {
+    left: 1748px;
+    top: 998px;
+}
 
-#Coach {}
+#Coach {    
+    left: 1604px;
+    top: 1258px;
+}
 
-#Foul {}
+#Foul {
+    left: 2044px;
+    top: 779px;
+}
 
-#TeamStatistic {}
+#TeamStatistic {
+    left: 2109px;
+    top: 1159px;
+    width: 117px;
+}
 
-#Governor {}
+#Governor {
+    left: 2027px;
+    top: 1218px;
+    width: 119px;
+}
 
-#SeasonStatistic {}
+#SeasonStatistic {    
+    left: 1989px;
+    top: 1639px;
+    width: 118px;
+}
 
-#PlayerStatistic {}
+#PlayerStatistic {
+    left: 2471px;
+    top: 698px;
+    width: 118px;
+}
 
-#DatabaseAdministrator {}
+#DatabaseAdministrator {
+    left: 2878px;
+    top: 756px;
+}
