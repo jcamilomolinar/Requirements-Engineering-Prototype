@@ -8,18 +8,6 @@ function quitOverlay() {
     window.style.display = "none";
 }
 
-function openStealsBall() {
-    let window = document.getElementById("openStealsBall");
-    window.style.display = "block";
-    putOverlay();
-}
-
-function closeStealsBall() {
-    let window = document.getElementById("openStealsBall");
-    window.style.display = "none";
-    quitOverlay();
-}
-
 function openPassesBall() {
     let window = document.getElementById("openPassesBall");
     window.style.display = "block";
@@ -28,6 +16,18 @@ function openPassesBall() {
 
 function closePassesBall() {
     let window = document.getElementById("openPassesBall");
+    window.style.display = "none";
+    quitOverlay();
+}
+
+function openStealsBall() {
+    let window = document.getElementById("openStealsBall");
+    window.style.display = "block";
+    putOverlay();
+}
+
+function closeStealsBall() {
+    let window = document.getElementById("openStealsBall");
     window.style.display = "none";
     quitOverlay();
 }
@@ -80,14 +80,14 @@ function closePurchasesTicket() {
     quitOverlay();
 }
 
-function openAdmonishesPlAyer() {
-    let window = document.getElementById("openAdmonishesPlAyer");
+function openAdmonishesPlayer() {
+    let window = document.getElementById("openAdmonishesPlayer");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeAdmonishesPlAyer() {
-    let window = document.getElementById("openAdmonishesPlAyer");
+function closeAdmonishesPlayer() {
+    let window = document.getElementById("openAdmonishesPlayer");
     window.style.display = "none";
     quitOverlay();
 }
@@ -104,14 +104,14 @@ function closeCommitsFoul() {
     quitOverlay();
 }
 
-function openDefenDsBasket() {
-    let window = document.getElementById("openDefenDsBasket");
+function openDefendsBasket() {
+    let window = document.getElementById("openDefendsBasket");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeDefenDsBasket() {
-    let window = document.getElementById("openDefenDsBasket");
+function closeDefendsBasket() {
+    let window = document.getElementById("openDefendsBasket");
     window.style.display = "none";
     quitOverlay();
 }
@@ -140,14 +140,14 @@ function closeControllingModifies() {
     quitOverlay();
 }
 
-function openIncreasIngScore() {
-    let window = document.getElementById("openIncreasIngScore");
+function openIncreasingScore() {
+    let window = document.getElementById("openIncreasingScore");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeIncreasIngScore() {
-    let window = document.getElementById("openIncreasIngScore");
+function closeIncreasingScore() {
+    let window = document.getElementById("openIncreasingScore");
     window.style.display = "none";
     quitOverlay();
 }
@@ -691,7 +691,6 @@ function closePlayerStatistic() {
     window.style.display = "none";
     quitOverlay();
 }
-
 
 function openDatabaseAdministrator() {
     let window = document.getElementById("openDatabaseAdministrator");

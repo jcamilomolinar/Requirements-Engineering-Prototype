@@ -416,7 +416,7 @@
     display: none;
 }
 
-#openAdmonishesPlAyer {
+#openAdmonishesPlayer {
     display: none;
 }
 
@@ -424,7 +424,7 @@
     display: none;
 }
 
-#openDefenDsBasket {
+#openDefendsBasket {
     display: none;
 }
 
@@ -436,7 +436,7 @@
     display: none;
 }
 
-#openIncreasIngScore {
+#openIncreasingScore {
     display: none;
 }
 
@@ -617,5 +617,9 @@
 }
 
 #openPlayerStatistic {
+    display: none;
+}
+
+#openDatabaseAdministrator {
     display: none;
 }
