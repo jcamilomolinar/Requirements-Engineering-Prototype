@@ -8,7 +8,6 @@
 .elementgdr {
     position: absolute;
     cursor: pointer;
-    background-color: red;
     border-radius: 50px;
     opacity: 70%;
     width: 101px;
@@ -129,7 +128,6 @@
 .elemente {
     position: absolute;
     cursor: pointer;
-    background-color: red;
     border-radius: 100%;
     opacity: 70%;
     width: 177px;
@@ -182,7 +180,6 @@
 .elementc {
     position: absolute;
     cursor: pointer;
-    background-color: red;
     opacity: 70%;
     transform: rotate(45deg);
 }
@@ -205,7 +202,6 @@
 .element {
     position: absolute;
     cursor: pointer;
-    background-color: red;
     opacity: 70%;
     width: 100px;
     height: 40px;
@@ -440,7 +436,7 @@
     display: none;
 }
 
-#openGuaranteeing Rule {
+#openGuaranteeingRule {
     display: none;
 }
 
