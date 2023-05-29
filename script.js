@@ -56,14 +56,14 @@ function closeModifiesPlayerStatistic() {
     quitOverlay();
 }
 
-function openModifiesTeaMStatistic() {
-    let window = document.getElementById("openModifiesTeaMStatistic");
+function openModifiesTeamStatistic() {
+    let window = document.getElementById("openModifiesTeamStatistic");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeModifiesTeaMStatistic() {
-    let window = document.getElementById("openModifiesTeaMStatistic");
+function closeModifiesTeamStatistic() {
+    let window = document.getElementById("openModifiesTeamStatistic");
     window.style.display = "none";
     quitOverlay();
 }
@@ -152,14 +152,14 @@ function closeIncreasingScore() {
     quitOverlay();
 }
 
-function openGuaranteeinGRule() {
-    let window = document.getElementById("openGuaranteeinGRule");
+function openGuaranteeingRule() {
+    let window = document.getElementById("openGuaranteeingRule");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeGuaranteeinGRule() {
-    let window = document.getElementById("openGuaranteeinGRule");
+function closeGuaranteeingRule() {
+    let window = document.getElementById("openGuaranteeingRule");
     window.style.display = "none";
     quitOverlay();
 }
@@ -176,14 +176,14 @@ function closeEnhancingHighlight() {
     quitOverlay();
 }
 
-function openIncreasIngPurchases() {
-    let window = document.getElementById("openIncreasIngPurchases");
+function openIncreasingPurchases() {
+    let window = document.getElementById("openIncreasingPurchases");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeIncreasIngPurchases() {
-    let window = document.getElementById("openIncreasIngPurchases");
+function closeIncreasingPurchases() {
+    let window = document.getElementById("openIncreasingPurchases");
     window.style.display = "none";
     quitOverlay();
 }
@@ -236,14 +236,14 @@ function closeAvoidingCommits() {
     quitOverlay();
 }
 
-function openImprovIngPlayerStatIstIc() {
-    let window = document.getElementById("openImprovIngPlayerStatIstIc");
+function openImprovingPlayerStatistic() {
+    let window = document.getElementById("openImprovingPlayerStatistic");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeImprovIngPlayerStatIstIc() {
-    let window = document.getElementById("openImprovIngPlayerStatIstIc");
+function closeImprovingPlayerStatistic() {
+    let window = document.getElementById("openImprovingPlayerStatistic");
     window.style.display = "none";
     quitOverlay();
 }
