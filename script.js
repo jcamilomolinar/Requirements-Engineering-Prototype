@@ -116,14 +116,14 @@ function closeDefendsBasket() {
     quitOverlay();
 }
 
-function openSelectSTeam() {
-    let window = document.getElementById("openSelectSTeam");
+function openSelectsTeam() {
+    let window = document.getElementById("openSelectsTeam");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeSelectSTeam() {
-    let window = document.getElementById("openSelectSTeam");
+function closeSelectsTeam() {
+    let window = document.getElementById("openSelectsTeam");
     window.style.display = "none";
     quitOverlay();
 }

@@ -9,7 +9,6 @@
     position: absolute;
     cursor: pointer;
     border-radius: 50px;
-    opacity: 70%;
     width: 101px;
     height: 41px;
 }
@@ -129,7 +128,6 @@
     position: absolute;
     cursor: pointer;
     border-radius: 100%;
-    opacity: 70%;
     width: 177px;
     height: 177px;
 }
@@ -180,9 +178,7 @@
 .elementc {
     position: absolute;
     cursor: pointer;
-    opacity: 70%;
     transform: rotate(45deg);
-    background-color: red;
 }
 
 #TicketAvailable {
@@ -203,7 +199,6 @@
 .element {
     position: absolute;
     cursor: pointer;
-    opacity: 70%;
     width: 100px;
     height: 40px;
 }
@@ -425,7 +420,7 @@
     display: none;
 }
 
-#openSelectSTeam {
+#openSelectsTeam {
     display: none;
 }
 
@@ -620,3 +615,4 @@
 #openDatabaseAdministrator {
     display: none;
 }
+
