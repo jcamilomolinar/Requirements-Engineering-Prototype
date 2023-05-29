@@ -182,18 +182,19 @@
     cursor: pointer;
     opacity: 70%;
     transform: rotate(45deg);
+    background-color: red;
 }
 
 #TicketAvailable {
-    width: 270px;
-    height: 270px;
+    width: 140px;
+    height: 140px;
     left: 99px;
     top: 823px;
 }
 
 #FoulTypePersonalOrTechnical {
-    width: 140px;
-    height: 140px;
+    width: 270px;
+    height: 270px;
     left: 2236px;
     top: 65px;
 }
