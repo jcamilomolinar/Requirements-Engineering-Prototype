@@ -8,7 +8,6 @@ function quitOverlay() {
     window.style.display = "none";
 }
 
-
 function openStealsBall() {
     let window = document.getElementById("openStealsBall");
     window.style.display = "block";

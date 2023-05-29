@@ -385,13 +385,13 @@
     width: 500px;
     height: 500px;
     background-color: #E9F8FF;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     font-family: "Helvetica", "Arial", sans-serif;
     padding: 30px;
     z-index: 10000;
+    border-radius: 10%;
 }
 
 #openStealsBall {
     display: none;
-    position: absolute;
 }
