@@ -363,3 +363,21 @@
     left: 2878px;
     top: 756px;
 }
+
+/* Message Boxes */
+
+.window {
+    position: absolute;
+    border-color: black;
+    left: 1200px;
+    top: 700px;
+    width: 700px;
+    height: 700px;
+    background-color: #E9F8FF;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#openStealsBall {
+    display: none;
+    position: absolute;
+}
