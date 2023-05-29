@@ -539,10 +539,12 @@
 
 #openGame {
     display: none;
+    height: 700px;
 }
 
 #openSeason {
     display: none;
+    height: 550px;
 }
 
 #openNational-Basketball-Association {
@@ -579,6 +581,7 @@
 
 #openTeam {
     display: none;
+    height: 550px;
 }
 
 #openTrainer {
@@ -587,6 +590,7 @@
 
 #openPlayer {
     display: none;
+    height: 550px;
 }
 
 #openCoach {
@@ -599,6 +603,7 @@
 
 #openTeamStatistic {
     display: none;
+    height: 780px
 }
 
 #openGovernor {
@@ -607,10 +612,12 @@
 
 #openSeasonStatistic {
     display: none;
+    height: 700px;
 }
 
 #openPlayerStatistic {
     display: none;
+    height: 950px;
 }
 
 #openDatabaseAdministrator {
@@ -685,4 +692,4 @@ input {
 
 input[type=text]:focus {
     border: 3px solid #555;
-  }
+}
