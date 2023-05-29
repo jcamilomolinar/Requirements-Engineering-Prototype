@@ -488,13 +488,13 @@ function closeSeason() {
     quitOverlay();
 }
 
-function openNational-Basketball-Association() {
+function openNational_Basketball_Association() {
     let window = document.getElementById("openNational-Basketball-Association");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeNational-Basketball-Association() {
+function closeNational_Basketball_Association() {
     let window = document.getElementById("openNational-Basketball-Association");
     window.style.display = "none";
     quitOverlay();
@@ -548,13 +548,13 @@ function closeEvent() {
     quitOverlay();
 }
 
-function openAll-Star-Weekend() {
+function openAll_Star_Weekend() {
     let window = document.getElementById("openAll-Star-Weekend");
     window.style.display = "block";
     putOverlay();
 }
 
-function closeAll-Star-Weekend() {
+function closeAll_Star_Weekend() {
     let window = document.getElementById("openAll-Star-Weekend");
     window.style.display = "none";
     quitOverlay();
