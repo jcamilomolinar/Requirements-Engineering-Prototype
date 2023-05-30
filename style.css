@@ -399,14 +399,19 @@
 
 #openModifiesPlayerStatistic {
     display: none;
+    height: 1140px;
+    top: 500px;
 }
 
 #openModifiesTeamStatistic {
     display: none;
+    height: 900px;
+    top: 600px;
 }
 
 #openPurchasesTicket {
     display: none;
+    height: 600px;
 }
 
 #openAdmonishesPlayer {
