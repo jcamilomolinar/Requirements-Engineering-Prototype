@@ -703,3 +703,15 @@ function closeDatabaseAdministrator() {
     window.style.display = "none";
     quitOverlay();
 }
+
+function openInterfaces() {
+    let window = document.getElementById("interfaces");
+    window.style.display = "block";
+    putOverlay();
+}
+
+function closeInterfaces() {
+    let window = document.getElementById("interfaces");
+    window.style.display = "none";
+    quitOverlay();
+}
