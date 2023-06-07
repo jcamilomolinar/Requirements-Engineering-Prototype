@@ -38,5 +38,5 @@ function allowsSpecification(idElement, idWindow) {
 }
 
 for(let i = 0; i < eleSpec.length; i++){
-    allowsSpecification(eleSpec[i],"open"+eleSpec[i][0].toUpperCase()+eleSpec[i].substring(1))
+    allowsSpecification(eleSpec[i],"spec"+eleSpec[i][0].toUpperCase()+eleSpec[i].substring(1))
 }
