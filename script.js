@@ -41,73 +41,92 @@ for(let i = 0; i < eleSpec.length; i++){
     allowsSpecification(eleSpec[i],"spec"+eleSpec[i][0].toUpperCase()+eleSpec[i].substring(1))
 }
 
+// Dynamic Relationship Code
+function modifiesScoreboard() {
+    const element1 = document.getElementById("Scoreboard.Score");
+    const element2 = document.getElementById("Score");
+    element2.value = element1.value
+    alert("Changes applied")
+}
+
+
 // LocalStorage
 
-let EP = {
-    Scorer: {Name: 0, Duty: 0},
-    Referee: {Name: 0, Duty: 0},
-    DatabaseAdministrator: {Name: 0, Salary: 0},
-    Foul: {Type: 0},
-    NationalBasketballAssociation: {
-        Sponsorship: 0,
-        Revenue: 0,
-        Administration: {
-            VicePresident: 0,
-            Commissioner: {Name: 0}
-        },
-        Conference: {
-            Championship: 0,
-            East: {Division: 0},
-            West: {Division: 0}
-        },
-        Season: {
-            Champion: 0,
-            SeasonStatistic: {Point: 0, Rebound: 0, Assist: 0, Steal: 0, Block: 0, ThreePoint: 0},
-            StartDate: 0,
-            FinishDate: 0,
-            MostValuablePlayer: 0,
-            Event: {
-                Final: 0,
-                Playoff: 0,
-                Draft: 0,
-                AllStarWeekend: {AllStarGame: 0, Contest: 0}
+function pullValue(id){
+    let ele = document.getElementById(id);
+    return ele.value;
+}
+
+function genEP() {
+    let EP = {
+        Scorer: {Name: pullValue("NameScorer"), Duty: pullValue("DutyScorer")},
+        Referee: {Name: pullValue("NameReferee"), Duty: pullValue("DutyReferee")},
+        DatabaseAdministrator: {Name: pullValue("NameDatabaseAdministrator"), Salary: pullValue("SalaryDatabaseAdministrator")},
+        Foul: {Type: pullValue("Type")},
+        NationalBasketballAssociation: {
+            Sponsorship: pullValue("SponsorshipNationalBasketballAssociation"),
+            Revenue: pullValue("Revenue"),
+            Administration: {
+                Vicepresident: pullValue("Vicepresident"),
+                Commissioner: {Name: pullValue("NameCommissioner")}
             },
-            Game: {
-                Duration: 0,
-                Highlight: 0,
-                Date: 0,
-                Winner: 0,
-                Loser: 0,
-                Official: {Salary: 0},
-                Scoreboard: {Score: 0},
-                Arena: {Name: 0},
-                Spectator: {Money: 0, Name: 0},
-                Ticket: {Availability: 0, IdentificationNumber: 0, Price: 0},
-                Equipment: {Basket: 0, Ball: 0},
-                Team: {
-                    Sponsorship: 0,
-                    Symbol: 0,
-                    Name: 0,
-                    Quantity: 0,
-                    Trainer: {Name: 0},
-                    Coach: {Name: 0},
-                    Governor: {Name: 0},
-                    TeamStatistic: {FieldGoal: 0, FreeThrow: 0, Rebound: 0, Assist: 0, Steal: 0, Block: 0, ThreePoint: 0},
-                    Player: {
-                        Name: 0, 
-                        Salary: 0, 
-                        Position: 0,
-                        BibNumber: 0,
-                        PlayerStatistic: {FieldGoal: 0, FreeThrow: 0, Rebound: 0, Assist: 0, Steal: 0, Block: 0, ThreePoint: 0, Pass: 0, PersonalFoul: 0},
+            Conference: {
+                Championship: pullValue("Championship"),
+                East: {Division: pullValue("EastDivision")},
+                West: {Division: pullValue("WestDivision")}
+            },
+            Season: {
+                Champion: pullValue("Champion"),
+                SeasonStatistic: {Point: pullValue("Point"), Rebound: pullValue("SeasonRebound"), Assist: pullValue("SeasonAssist"), Steal: pullValue("SeasonSteal"), Block: pullValue("SeasonBlock"), ThreePoint: pullValue("SeasonSteal")},
+                StartDate: pullValue("StartDate"),
+                FinishDate: pullValue("FinishDate"),
+                MostValuablePlayer: pullValue("MostValuablePlayer"),
+                Event: {
+                    Final: pullValue("Final"),
+                    Playoff: pullValue("Playoff"),
+                    Draft: pullValue("Draft"),
+                    AllStarWeekend: {AllStarGame: pullValue("AllStarGame"), Contest: pullValue("Contest")}
+                },
+                Game: {
+                    Duration: pullValue("Duration"),
+                    Highlight: pullValue("Highlight"),
+                    Date: pullValue("Date"),
+                    Winner: pullValue("Winner"),
+                    Loser: pullValue("Loser"),
+                    GameClock: pullValue("GameClock"),
+                    Official: {Salary: pullValue("SalaryOfficial")},
+                    Scoreboard: {Score: pullValue("Score")},
+                    Arena: {Name: pullValue("NameArena")},
+                    Spectator: {Money: pullValue("Money"), Name: pullValue("NameSpectator")},
+                    Ticket: {Availability: pullValue("Availability"), IdentificationNumber: pullValue("ID"), Price: pullValue("Price")},
+                    Equipment: {Basket: pullValue("Basket"), Ball: pullValue("Ball")},
+                    Team: {
+                        Sponsorship: pullValue("SponsorshipTeam"),
+                        Symbol: pullValue("Symbol"),
+                        Name: pullValue("NameTeam"),
+                        Quantity: pullValue("Quantity"),
+                        Trainer: {Name: pullValue("NameTrainer")},
+                        Coach: {Name: pullValue("NameCoach")},
+                        Governor: {Name: pullValue("NameGovernor")},
+                        TeamStatistic: {FieldGoal: pullValue("TeamFieldGoal"), FreeThrow: pullValue("TeamFreeThrow"), Rebound: pullValue("TeamRebound"), Assist: pullValue("TeamAssist"), Steal: pullValue("TeamSteal"), Block: pullValue("TeamBlock"), ThreePoint: pullValue("TeamThreePoint")},
+                        Player: {
+                            Name: pullValue("NamePlayer"), 
+                            Salary: pullValue("SalaryPlayer"), 
+                            Position: pullValue("Position"),
+                            BibNumber: pullValue("BibNumber"),
+                            PlayerStatistic: {FieldGoal: pullValue("PlayerFieldGoal"), FreeThrow: pullValue("PlayerFreeThrow"), Rebound: pullValue("PlayerRebound"), Assist: pullValue("PlayerAssist"), Steal: pullValue("PlayerSteal"), Block: pullValue("PlayerBlock"), ThreePoint: pullValue("PlayerThreePoint"), Pass: pullValue("Pass"), PersonalFoul: pullValue("PersonalFoul")},
+                        }
                     }
                 }
             }
         }
     }
-};
+    return EP
+}
+
 
 function downloadEP(){
-    localStorage.setItem("EP", JSON.stringify(EP, null, 4))
+    localStorage.setItem("EP", JSON.stringify(genEP(), null, 4))
     var link = document.createElement('a');
     link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(localStorage.getItem("EP")));
     link.setAttribute('download', 'AttributesValues.txt');

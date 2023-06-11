@@ -13,6 +13,7 @@
           <img src="EP\EPs_D1-EP_principal.drawio.svg"></img>
         </div>
 
+        <!--EP Buttons-->
         <!--Dynamic relationship-->
         <div class="elementgdr" id="stealsBall" onclick='openWindow("openStealsBall")'></div>
         <div class="elementgdr" id="passesBall" onclick='openWindow("openPassesBall")'></div>
@@ -81,7 +82,8 @@
         <div class="element" id="DatabaseAdministrator" onclick="openWindow('openDatabaseAdministrator')"></div>
         
         <div id="overlay" class="overlay"></div>
-      
+        
+        <!--Windows-->
         <!--Dynamic relationship-->
         <div id="openPassesBall" class="window">
           <div>
@@ -124,9 +126,9 @@
             <p>The scorer can make changes to the score of any team in a match</p>
             <form>
               <label>Scoreboard.Score</label><br>
-              <input type="text"><br>
+              <input id="Scoreboard.Score" type="text"><br>
             </form>
-            <button>Make changes</button>
+            <button onclick='modifiesScoreboard()'>Make changes</button>
             <button onclick='closeWindow("openModifiesScoreboard")'>OK</button>
           </div>
         </div>
@@ -634,9 +636,9 @@
             <h2>Scorer</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="John"><br>
+              <input id="NameScorer" type="text" value="John"><br>
               <label>Duty</label><br>
-              <input type="text" value="Increase a team's score when they make a basket"><br>
+              <input id="DutyScorer" type="text" value="Increase a team's score when they make a basket"><br>
             </form>
             <button onclick='closeWindow("openScorer")'>OK</button>
           </div>
@@ -648,7 +650,7 @@
             <h2>Scoreboard</h2>
             <form>
               <label>Score</label><br>
-              <input type="text" value="99 - 100"><br>
+              <input id="Score" type="text" value="99 - 100"><br>
             </form>
             <button onclick='closeWindow("openScoreboard")'>OK</button>
           </div>
@@ -660,7 +662,7 @@
             <h2>Arena</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Chicago Stadium"><br>
+              <input id="NameArena" type="text" value="Chicago Stadium"><br>
             </form>
             <button onclick='closeWindow("openArena")'>OK</button>
           </div>
@@ -672,9 +674,9 @@
             <h2>Spectator</h2>
             <form>
               <label>Money</label><br>
-              <input type="text" value="10000$"><br>
+              <input id="Money" type="text" value="10000$"><br>
               <label>Name</label><br>
-              <input type="text" value="Karen"><br>
+              <input id="NameSpectator" type="text" value="Karen"><br>
             </form>
             <button onclick='closeWindow("openSpectator")'>OK</button>
           </div>
@@ -686,11 +688,11 @@
             <h2>Ticket</h2>
             <form>
               <label>Availability</label><br>
-              <input type="text" value="Available"><br>
+              <input id="Availability" type="text" value="Available"><br>
               <label>Price</label><br>
-              <input type="text" value="300$"><br>
+              <input id="Price" type="text" value="300$"><br>
               <label>Identification Number</label><br>
-              <input type="text" value="123"><br>
+              <input id="ID" type="text" value="123"><br>
             </form>
             <button onclick='closeWindow("openTicket")'>OK</button>
           </div>
@@ -702,7 +704,7 @@
             <h2>Administration</h2>
             <form>
               <label>Vicepresident</label><br>
-              <input type="text" value="Michael Bass"><br>
+              <input id="Vicepresident" type="text" value="Michael Bass"><br>
           </form>
             <button onclick='closeWindow("openAdministration")'>OK</button>
           </div>
@@ -714,7 +716,7 @@
             <h2>Commissioner</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Adam Silver"><br>
+              <input id="NameCommissioner" type="text" value="Adam Silver"><br>
             </form>
             <button onclick='closeWindow("openCommissioner")'>OK</button>
           </div>
@@ -726,7 +728,7 @@
             <h2>Official</h2>
             <form>
               <label>Salary</label><br>
-              <input type="text" value="4000$"><br>
+              <input id="SalaryOfficial" type="text" value="4000$"><br>
             </form>
             <button onclick='closeWindow("openOfficial")'>OK</button>
           </div>
@@ -738,17 +740,17 @@
             <h2>Game</h2>
             <form>
               <label>Winner</label><br>
-              <input type="text" value="Chicago Bulls"><br>
+              <input id="Winner" type="text" value="Chicago Bulls"><br>
               <label>Loser</label><br>
-              <input type="text" value="Denver Nuggets"><br>
+              <input id="Loser" type="text" value="Denver Nuggets"><br>
               <label>Duration</label><br>
-              <input type="text" value="45 minutes"><br>
+              <input id="Duration" type="text" value="45 minutes"><br>
               <label>Game clock</label><br>
-              <input type="text" value="4 times"><br>
+              <input id="GameClock" type="text" value="4 times"><br>
               <label>Highlight</label><br>
-              <input type="text" value="Dunk"><br>
+              <input id="Highlight" type="text" value="Dunk"><br>
               <label>Date</label><br>
-              <input type="text" value="29/05/2023"><br>
+              <input id="Date" type="text" value="29/05/2023"><br>
             </form>
             <button onclick='closeWindow("openGame")'>OK</button>
           </div>
@@ -760,13 +762,13 @@
             <h2>Season</h2>
             <form>
               <label>Champion</label><br>
-              <input type="text" value="Golden State Warriors"><br>
+              <input id="Champion" type="text" value="Golden State Warriors"><br>
               <label>Most Valuable Player</label><br>
-              <input type="text" value="Stephen Curry"><br>
+              <input id="MostValuablePlayer" type="text" value="Stephen Curry"><br>
               <label>Finish Date</label><br>
-              <input type="text" value="30/05/2023"><br>
+              <input id="FinishDate" type="text" value="30/05/2023"><br>
               <label>Start Date</label><br>
-              <input type="text" value="01/01/2023"><br>
+              <input id="StartDate" type="text" value="01/01/2023"><br>
           </form>
             <button onclick='closeWindow("openSeason")'>OK</button>
           </div>
@@ -778,9 +780,9 @@
             <h2>National Basketball Association</h2>
             <form>
               <label>Revenue</label><br>
-              <input type="text" value="1000 billion of dollars"><br>
+              <input id="Revenue" type="text" value="1000 billion of dollars"><br>
               <label>Sponsorship</label><br>
-              <input type="text" value="Jordan"><br>
+              <input id="SponsorshipNationalBasketballAssociation" type="text" value="Jordan"><br>
             </form>
             <button onclick='closeWindow("openNational-Basketball-Association")'>OK</button>
           </div>
@@ -792,7 +794,7 @@
             <h2>Conference</h2>
             <form>
               <label>Championship</label><br>
-              <input type="text" value="East Championship"><br>
+              <input id="Championship" type="text" value="East Championship"><br>
             </form>
             <button onclick='closeWindow("openConference")'>OK</button>
           </div>
@@ -804,7 +806,7 @@
             <h2>East</h2>
             <form>
               <label>Division</label><br>
-              <input type="text" value="Atlantic"><br>
+              <input id="EastDivision" type="text" value="Atlantic"><br>
             </form>
             <button onclick='closeWindow("openEast")'>OK</button>
           </div>
@@ -816,7 +818,7 @@
             <h2>West</h2>
             <form>
               <label>Division</label><br>
-              <input type="text" value="Northwest"><br>
+              <input id="WestDivision" type="text" value="Northwest"><br>
             </form>
             <button onclick='closeWindow("openWest")'>OK</button>
           </div>
@@ -828,11 +830,11 @@
             <h2>Event</h2>
             <form>
               <label>Final</label><br>
-              <input type="text" value="GSW vs. Bulls"><br>
+              <input id="Final" type="text" value="GSW vs. Bulls"><br>
               <label>Playoff</label><br>
-              <input type="text" value="Nuggets vs. Knicks"><br>
+              <input id="Playoff" type="text" value="Nuggets vs. Knicks"><br>
               <label>Draft</label><br>
-              <input type="text" value="New Player"><br>
+              <input id="Draft" type="text" value="New Player"><br>
             </form>
             <button onclick='closeWindow("openEvent")'>OK</button>
           </div>
@@ -844,9 +846,9 @@
             <h2>All Star Weekend</h2>
             <form>
               <label>All Star Game</label><br>
-              <input type="text" value="East vs. West"><br>
+              <input id="AllStarGame" type="text" value="East vs. West"><br>
               <label>Contest</label><br>
-              <input type="text" value="Three-point"><br>
+              <input id="Contest" type="text" value="Three-point"><br>
             </form>
             <button onclick='closeWindow("openAll-Star-Weekend")'>OK</button>
           </div>
@@ -858,9 +860,9 @@
             <h2>Referee</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Michael"><br>
+              <input id="NameReferee" type="text" value="Michael"><br>
               <label>Duty</label><br>
-              <input type="text" value="Make sure the rules are followed"><br>
+              <input id="DutyReferee" type="text" value="Make sure the rules are followed"><br>
             </form>
             <button onclick='closeWindow("openReferee")'>OK</button>
           </div>
@@ -872,9 +874,9 @@
             <h2>Equipment</h2>
             <form>
               <label>Basket</label><br>
-              <input type="text" value="Nike"><br>
+              <input id="Basket" type="text" value="Nike"><br>
               <label>Ball</label><br>
-              <input type="text" value="Spalding"><br>
+              <input id="Ball" type="text" value="Spalding"><br>
             </form>
             <button onclick='closeWindow("openEquipment")'>OK</button>
           </div>
@@ -886,13 +888,13 @@
             <h2>Team</h2>
             <form>
               <label>Sponsorship</label><br>
-              <input type="text" value="Puma"><br>
+              <input id="SponsorshipTeam" type="text" value="Puma"><br>
               <label>Name</label><br>
-              <input type="text" value="Houston Rockets"><br>
+              <input id="NameTeam" type="text" value="Houston Rockets"><br>
               <label>Quantity</label><br>
-              <input type="text" value="30"><br>
+              <input id="Quantity" type="text" value="30"><br>
               <label>Symbol</label><br>
-              <input type="text" value="Logo"><br>
+              <input id="Symbol" type="text" value="Logo"><br>
           </form>
             <button onclick='closeWindow("openTeam")'>OK</button>
           </div>
@@ -904,7 +906,7 @@
             <h2>Trainer</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="George"><br>
+              <input id="NameTrainer" type="text" value="George"><br>
             </form>
             <button onclick='closeWindow("openTrainer")'>OK</button>
           </div>
@@ -916,13 +918,13 @@
             <h2>Player</h2>
             <form>
               <label>Bib Number</label><br>
-              <input type="text" value="10"><br>
+              <input id="BibNumber" type="text" value="10"><br>
               <label>Position</label><br>
-              <input type="text" value="Centre"><br>
+              <input id="Position" type="text" value="Centre"><br>
               <label>Name</label><br>
-              <input type="text" value="Lebron James"><br>
+              <input id="NamePlayer" type="text" value="Lebron James"><br>
               <label>Salary</label><br>
-              <input type="text" value="1000000$"><br>
+              <input id="SalaryPlayer" type="text" value="1000000$"><br>
           </form>
             <button onclick='closeWindow("openPlayer")'>OK</button>
           </div>
@@ -934,7 +936,7 @@
             <h2>Coach</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Lucas"><br>
+              <input id="NameCoach" type="text" value="Lucas"><br>
             </form>
             <button onclick='closeWindow("openCoach")'>OK</button>
           </div>
@@ -946,7 +948,7 @@
             <h2>Foul</h2>
             <form>
               <label>Type</label><br>
-              <input type="text" value="Technical"><br>
+              <input id="Type" type="text" value="Technical"><br>
             </form>
             <button onclick='closeWindow("openFoul")'>OK</button>
           </div>
@@ -958,19 +960,19 @@
             <h2>Team Statistic</h2>
             <form>
               <label>Field Goal</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamFieldGoal" type="text" value="1"><br>
               <label>Free Throw</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamFreeThrow" type="text" value="1"><br>
               <label>Rebound</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamRebound" type="text" value="1"><br>
               <label>Assist</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamAssist" type="text" value="1"><br>
               <label>Steal</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamSteal" type="text" value="1"><br>
               <label>Block</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamBlock" type="text" value="1"><br>
               <label>Three-point</label><br>
-              <input type="text" value="1"><br>
+              <input id="TeamThreePoint" type="text" value="1"><br>
           </form>
             <button onclick='closeWindow("openTeamStatistic")'>OK</button>
           </div>
@@ -982,7 +984,7 @@
             <h2>Governor</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Michael Jordan"><br>
+              <input id="NameGovernor" type="text" value="Michael Jordan"><br>
             </form>
             <button onclick='closeWindow("openGovernor")'>OK</button>
           </div>
@@ -994,17 +996,17 @@
             <h2>Season Statistic</h2>
             <form>
               <label>Point</label><br>
-              <input type="text" value="1"><br>
+              <input id="Point" type="text" value="1"><br>
               <label>Rebound</label><br>
-              <input type="text" value="1"><br>
+              <input id="SeasonRebound" type="text" value="1"><br>
               <label>Assist</label><br>
-              <input type="text" value="1"><br>
+              <input id="SeasonAssist" type="text" value="1"><br>
               <label>Steal</label><br>
-              <input type="text" value="1"><br>
+              <input id="SeasonSteal" type="text" value="1"><br>
               <label>Block</label><br>
-              <input type="text" value="1"><br>
+              <input id="SeasonBlock" type="text" value="1"><br>
               <label>Three-point</label><br>
-              <input type="text" value="1"><br>
+              <input id="SeasonThreePoint" type="text" value="1"><br>
           </form>
             <button onclick='closeWindow("openSeasonStatistic")'>OK</button>
           </div>
@@ -1016,23 +1018,23 @@
             <h2>Player Statistic</h2>
             <form>
               <label>Field Goal</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerFieldGoal" type="text" value="1"><br>
               <label>Free Throw </label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerFreeThrow" type="text" value="1"><br>
               <label>Rebound</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerRebound" type="text" value="1"><br>
               <label>Assist</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerAssist" type="text" value="1"><br>
               <label>Steal</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerSteal" type="text" value="1"><br>
               <label>Block</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerBlock" type="text" value="1"><br>
               <label>Three-point</label><br>
-              <input type="text" value="1"><br>
+              <input id="PlayerThreePoint" type="text" value="1"><br>
               <label>Pass</label><br>
-              <input type="text" value="1"><br>
+              <input id="Pass" type="text" value="1"><br>
               <label>Personal Foul</label><br>
-              <input type="text" value="1"><br>
+              <input id="PersonalFoul" type="text" value="1"><br>
           </form>
             <button onclick='closeWindow("openPlayerStatistic")'>OK</button>
           </div>
@@ -1044,9 +1046,9 @@
             <h2>Database Administrator</h2>
             <form>
               <label>Name</label><br>
-              <input type="text" value="Mike"><br>
+              <input id="NameDatabaseAdministrator" type="text" value="Mike"><br>
               <label>Salary</label><br>
-              <input type="text" value="10000$"><br>
+              <input id="SalaryDatabaseAdministrator" type="text" value="10000$"><br>
           </form>
             <button onclick='closeWindow("openDatabaseAdministrator")'>OK</button>
           </div>
