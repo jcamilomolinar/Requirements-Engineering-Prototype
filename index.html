@@ -90,7 +90,7 @@
             <h1>Dynamic relationship</h1>
             <h2>Passes Ball</h2>
             <p>When a player successfully passes to a teammate, one is added to the pass characteristic of the player's statistics.</p>
-            <button>Sum one to pass characteristic</button>
+            <button onclick='addOneToStatistic("Pass")'>Sum one to pass characteristic</button>
             <button onclick='closeWindow("openPassesBall")'>OK</button>
           </div>
         </div>
@@ -107,7 +107,7 @@
             <h1>Dynamic relationship</h1>
             <h2>Player Steals Ball</h2>
             <p>When the player steals the ball, one is added to the steals characteristic of the player's statistics.</p>
-            <button>Sum one to steal characteristic</button>
+            <button onclick='addOneToStatistic("PlayerSteal")'>Sum one to steal characteristic</button>
             <button onclick='closeWindow("openStealsBall")'>OK</button>
           </div>
         </div>
@@ -147,25 +147,25 @@
             <p>The Database Administrator can make changes to any of the player's statistics</p>
             <form>
               <label>PlayerStatistic.FieldGoal</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.FieldGoal" type="text" value=""><br>
               <label>PlayerStatistic.FreeThrow </label><br>
-              <input type="text" value=""><br>
+              <input id="Player.FreeThrow" type="text" value=""><br>
               <label>PlayerStatistic.Rebound</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.Rebound" type="text" value=""><br>
               <label>PlayerStatistic.Assist</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.Assist" type="text" value=""><br>
               <label>PlayerStatistic.Steal</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.Steal" type="text" value=""><br>
               <label>PlayerStatistic.Block</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.Block" type="text" value=""><br>
               <label>PlayerStatistic.Three-point</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.ThreePoint" type="text" value=""><br>
               <label>PlayerStatistic.Pass</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.Pass" type="text" value=""><br>
               <label>PlayerStatistic.PersonalFoul</label><br>
-              <input type="text" value=""><br>
+              <input id="Player.PersonalFoul" type="text" value=""><br>
             </form>
-            <button>Make changes</button>
+            <button onclick='modifiesPlayerStatistic()'>Make changes</button>
             <button onclick='closeWindow("openModifiesPlayerStatistic")'>OK</button>
           </div>
         </div>
@@ -184,20 +184,21 @@
             <p>The Database Administrator can make changes to any of the player's statistics</p>
             <form>
               <label>TeamStatistic.FieldGoal</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.FieldGoal" type="text" value=""><br>
               <label>TeamStatistic.FreeThrow</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.FreeThrow" type="text" value=""><br>
               <label>TeamStatistic.Rebound</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.Rebound" type="text" value=""><br>
               <label>TeamStatistic.Assist</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.Assist" type="text" value=""><br>
               <label>TeamStatistic.Steal</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.Steal" type="text" value=""><br>
               <label>TeamStatistic.Block</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.Block" type="text" value=""><br>
               <label>TeamStatistic.Three-point</label><br>
-              <input type="text" value=""><br>
+              <input id="Team.ThreePoint" type="text" value=""><br>
             </form>
+            <button onclick='modifiesTeamStatistic()'>Make changes</button>
             <button onclick='closeWindow("openModifiesTeamStatistic")'>OK</button>
           </div>
         </div>
@@ -216,11 +217,11 @@
             <p>When a spectator buys a ticket, the price of his money is discounted and the availability of that ticket changes</p>
             <form>
               <label>Ticket.Availability</label><br>
-              <input type="text"><br>
-              <label> Spectator.Money</label><br>
-              <input type="text"><br>
+              <input id="Ticket.Availability" type="text"><br>
+              <label>Spectator.Money</label><br>
+              <input id="Spectator.Money" type="text"><br>
             </form>
-            <button>Make changes</button>
+            <button onclick='purchasesTicket()'>Make changes</button>
             <button onclick='closeWindow("openPurchasesTicket")'>OK</button>
           </div>
         </div>
@@ -239,9 +240,9 @@
             <p>When a spectator selects a team, they change the name of the team according to the choice.</p>
             <form>
               <label>Team.Name</label><br>
-              <input type="text"><br>
+              <input id="Team.Name" type="text"><br>
             </form>
-            <button>Make changes</button>
+            <button onclick='selectsTeam()'>Make changes</button>
             <button onclick='closeWindow("openSelectsTeam")'>OK</button>
           </div>
         </div>
@@ -258,7 +259,7 @@
             <h1>Dynamic relationship</h1>
             <h2>Admonishes Player</h2>
             <p>The referee admonishes the player when he commits a foul, one is added to the foul characteristic of the player's statistics.</p>
-            <button>Sum one to foul characteristic</button>
+            <button onclick='addOneToStatistic("PersonalFoul")'>Sum one to foul characteristic</button>
             <button onclick='closeWindow("openAdmonishesPlayer")'>OK</button>
           </div>
         </div>
@@ -274,7 +275,7 @@
           <div>
             <h1>Dynamic relationship</h1>
             <p>When the player commits a foul, one is added to the foul characteristic of the player's statistics.</p>
-            <button>Sum one to foul characteristic</button>
+            <button onclick='addOneToStatistic("PersonalFoul")'>Sum one to foul characteristic</button>
             <button onclick='closeWindow("openCommitsFoul")'>OK</button>
           </div>
         </div>
@@ -291,7 +292,7 @@
             <h1>Dynamic relationship</h1>
             <h2>Defends Basket</h2>
             <p>When a player successfully defends the basket, one is added to the block characteristic of the player's statistics.</p>
-            <button>Sum one to foul characteristic</button>
+            <button onclick='addOneToStatistic("PlayerBlock")'>Sum one to block characteristic</button>
             <button onclick='closeWindow("openDefendsBasket")'>OK</button>
           </div>
         </div>

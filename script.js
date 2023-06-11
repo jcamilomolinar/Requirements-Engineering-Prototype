@@ -38,17 +38,61 @@ function allowsSpecification(idElement, idWindow) {
 }
 
 for(let i = 0; i < eleSpec.length; i++){
-    allowsSpecification(eleSpec[i],"spec"+eleSpec[i][0].toUpperCase()+eleSpec[i].substring(1))
+    allowsSpecification(eleSpec[i],"spec"+eleSpec[i][0].toUpperCase()+eleSpec[i].substring(1));
 }
 
 // Dynamic Relationship Code
 function modifiesScoreboard() {
     const element1 = document.getElementById("Scoreboard.Score");
     const element2 = document.getElementById("Score");
-    element2.value = element1.value
+    element2.value = element1.value;
     alert("Changes applied")
 }
 
+function purchasesTicket() {
+    const element1 = document.getElementById("Ticket.Availability");
+    const element2 = document.getElementById("Availability");
+    const element3 = document.getElementById("Spectator.Money");
+    const element4 = document.getElementById("Money");
+    element2.value = element1.value;
+    element4.value = element3.value;
+    alert("Changes applied")
+}
+
+function selectsTeam() {
+    const element1 = document.getElementById("Team.Name");
+    const element2 = document.getElementById("NameTeam");
+    element2.value = element1.value;
+    alert("Changes applied")
+}
+
+function modifiesPlayerStatistic() {
+    let windowConcepts = ["PlayerFieldGoal", "PlayerFreeThrow", "PlayerRebound", "PlayerAssist", "PlayerSteal", "PlayerBlock", "PlayerThreePoint", "Pass", "PersonalFoul"];
+    let dynamicValues = ["Player.FieldGoal", "Player.FreeThrow", "Player.Rebound", "Player.Assist", "Player.Steal", "Player.Block", "Player.ThreePoint", "Player.Pass", "Player.PersonalFoul"];
+    for(let i = 0; i < windowConcepts.length; i++){
+        let element1 = document.getElementById(dynamicValues[i]);
+        let element2 = document.getElementById(windowConcepts[i]);
+        element2.value = element1.value;
+    }
+    alert("Changes applied")
+}
+
+function modifiesTeamStatistic() {
+    let windowConcepts = ["TeamFieldGoal", "TeamFreeThrow", "TeamRebound", "TeamAssist", "TeamSteal", "TeamBlock", "TeamThreePoint"];
+    let dynamicValues = ["Team.FieldGoal", "Team.FreeThrow", "Team.Rebound", "Team.Assist", "Team.Steal", "Team.Block", "Team.ThreePoint"];
+    for(let i = 0; i < windowConcepts.length; i++){
+        let element1 = document.getElementById(dynamicValues[i]);
+        let element2 = document.getElementById(windowConcepts[i]);
+        element2.value = element1.value;
+    }
+    alert("Changes applied")
+}
+
+function addOneToStatistic(stat) {
+    const element1 = document.getElementById(stat);
+    element1.value = Number(element1.value) + 1;
+    alert("One has been added to the statistic");
+}
 
 // LocalStorage
 
