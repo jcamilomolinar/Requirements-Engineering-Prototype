@@ -28,7 +28,6 @@ const eleSpec = ["stealsBall", "passesBall", "modifiesScoreboard", "modifiesPlay
 "SpectatorEntersSystem", "TeamStatisticVisualized", "CoachDirectsPlayer", "PlayerStatisticIncreased", 
 "TeamStatisticUpdated", "TicketAvailable", "FoulTypePersonalOrTechnical"];
 
-
 function allowsSpecification(idElement, idWindow) {
     let div = document.getElementById(idElement);
     div.addEventListener("contextmenu", function(event) {
@@ -95,7 +94,6 @@ function addOneToStatistic(stat) {
 }
 
 // LocalStorage
-
 function pullValue(id){
     let ele = document.getElementById(id);
     return ele.value;
@@ -168,14 +166,29 @@ function genEP() {
     return EP
 }
 
-
 function downloadEP(){
-    localStorage.setItem("EP", JSON.stringify(genEP(), null, 4))
+    saveEP();
     var link = document.createElement('a');
-    link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(localStorage.getItem("EP")));
+    link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(genEP(), null, 4)));
     link.setAttribute('download', 'AttributesValues.txt');
     link.style.display = 'none';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 };
+
+function saveEP() {
+    localStorage.setItem("EP", JSON.stringify(genEP()));
+    alert("The current values of all the attributes have been saved in the LocalStorage");
+}
+
+//Replace values of the LocalStorage in the attributes
+if (localStorage.getItem("EP") == null) {
+    console.log("There are no attribute values currently in the LocalStorage");
+} else{
+    let EP = JSON.parse(localStorage.getItem("EP"));
+    document.getElementById("NameScorer").value = EP.Scorer.Name;
+    document.getElementById("DutyScorer").value = EP.Scorer.Duty;
+    document.getElementById("Score").value = EP.NationalBasketballAssociation.Season.Game.Scoreboard.Score;
+    
+}
